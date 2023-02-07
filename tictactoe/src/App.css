@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/*Square css*/
+
+.square{
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 4px 4px 3px -1px rgba(255, 255, 255, 1);
+}
+.square:hover{
+  border: 1px solid yellow;
+  transform: scale(1.1);
+}
+.squareX{
+  color: rgb(235, 211, 0);
+}
+.squareO{
+  color: rgb(255, 0, 217);
+}
+.gamecontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 2%;
+  
+}
+ .maincontainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center; */
+  align-items:center;
+  height: 100vh;
+}
+
+button.resetbttn{
+  margin: 10px;
+}
+
+h2.winner{
+  color: greenyellow;
+  font-size: 2rem;
+}
+
+h2.gameText{
+  padding-top: 50px;
+  width: 300px;
+  font-size: 2rem;
+} 
+
+
+
+
+
+
+
